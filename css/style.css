@@ -1,0 +1,36 @@
+.page__body {
+    background-color: black;
+    margin: 0 auto;
+    min-height: 100%;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.main-container__index-background {
+    background-image: url(../img/index-background.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.main-container__button-play {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2.5px);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.button__header {
+    background-color: #0059C1;
+    width: 121px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+}
