@@ -13,40 +13,44 @@
                 <a href="" class="main-header__logo">
                     <img src="img/main_logo.svg" width="100" height="41" alt="Логотип сайта">
                 </a>
-                <nav class="main-nav">
-                    <div class="main-nav__wrapper">
-                        <ul class="main-nav__left-list">
-                            <li class="site-list__item">
-                                <a class="site-list__link" href="#">series</a>
-                            </li>
-                            <li class="site-list__item">
-                                <a class="site-list__link" href="#">movies</a>
-                            </li>
-                        </ul>
-                        <ul class="main-nav__right-list">
-                            <li class="site-list__item">
-                                <a class="site-list__link" href="#">free episodes</a>
-                            </li>
-                            <li class="site-list__item">
-                                <a class="site-list__link" href="#">schedule</a>
-                            </li>
-                        </ul>
-                    </div>
+                <nav class="main-nav__wrapper">
+                    <ul class="main-nav__left-list site-list">
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="#">series</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="#">movies</a>
+                        </li>
+                    </ul>
+                    <ul class="main-nav__right-list site-list">
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="#">free episodes</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="#">schedule</a>
+                        </li>
+                    </ul>
                 </nav>
                 <a class="button__header" href="#">sign in</a>
             </header>
             <main class="main-container">
-                <div class="main-container__index-background">
-                    <img class="main-container__index-logo" src="./img/main_title.svg" width="759" height="250" alt="The last of us">
-                    <div class="info__play">
-                        <a class="info__play-link" href="#">
-                            <span class="info__play-text">watch the trailer</span>
-                        </a>
+                <section class="main-container__index-background">
+                    <div class="main-container__slider-area">
+                        <div class="main-container__slider-box">
+                            <img class="main-container__main_title" src="./img/main_title.svg" width="759" alt="The last of us">
+                            <hr class="main-container__scrollLine"/>
+                        <div class="info__play">
+                            <button class="info__btn">
+                                <span class="info__text">watch the trailer</span>
+                            </button>
+                        </div>
+                        </div>
                     </div>
-                </div>
+                </section>
+                
                 <section class="serials-list">
                     <div class="serials-list__wrapper">
-                        <h2>HBO Original</h2>
+                        <h2 class="serials-list__main-title">HBO Original</h2>
                         <ul class="serials-list__cards">
                             <li class="serials-list__card-item">
                                 <a class="serials-list__card-link" href="#">
