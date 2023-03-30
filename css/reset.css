@@ -22,11 +22,13 @@ a {
 }
 
 button {
+	font-family: inherit;
 	border: none;
 	outline: none;
 	cursor: pointer;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
+	margin: 0;
+	padding: 0;
+	color: #fff;
 }

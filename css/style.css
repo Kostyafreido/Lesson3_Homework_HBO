@@ -148,13 +148,6 @@
 	justify-content: center;
 }
 
-/* .main-container__slider-area::after {
-	content: "";
-	position: relative;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-	width: 500px;
-} */
-
 .main-container__slider-box {
 	margin: 0 auto;
 	display: flex;
@@ -179,7 +172,7 @@
 	background-color: #E3B100;
 	width: 100px;
 	height: 1px;
-	bottom: 83px;
+	bottom: 82px;
 	left: 93px;
 }
 
@@ -188,6 +181,8 @@
 	justify-content: center;
 	padding: 24px;
 	position: relative;
+	min-width: 658px;
+    min-height: 143px;
 }
 
 .info__play {
@@ -213,12 +208,19 @@
 	height: 40px;
 	border-radius: 50%;
 	top: -3px;
-	left: -33px;
+	left: -40px;
 }
+
+/*Не знаю, как сделать, так чтобы наведение работало на псевдоэлемент и текст одновременно
+Сейчас, если наводить на псевдо, ховер работает, но текст не подсвечивается. Если наводить на текст, то он подсвечивается вместе с псевдо*/
 
 .info__btn:hover:before {
 	background-color: #E3B100;
-}
+} 
+
+.info__btn:hover:before {
+	background-color: #E3B100;
+} 
 
 .info__btn:active:before {
 	background-color: #dedcd6;
@@ -247,6 +249,7 @@
 .series {
 	position: relative;
 	width: max-content;
+	padding-bottom: 81px;
 }
 
 .series__wrapper {
@@ -266,9 +269,10 @@
 	padding: 0;
 	margin: 0;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	gap: 24px;
-	/* overflow-x: auto; */
+	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 	overflow: hidden;
 }
@@ -276,7 +280,7 @@
 .series__item {
 	cursor: pointer;
 	position: relative;
-	scroll-snap-align: start;
+	/* scroll-snap-align: start; */
 }
 
 .series__item:hover a {
@@ -364,10 +368,12 @@
 }
 
 .series__card-button {
+	justify-content: space-between;
 	width: 170px;
 	height: 38px;
 	background: #0059c1;
 	border-radius: 12px;
+	text-transform: uppercase;
 	color: white;
 	font-size: 13px;
 	line-height: 16px;
@@ -384,92 +390,110 @@
 }
 
 .subscriptions {
-	padding-top: 80px;
+	/* width: max-content; */
 	padding-bottom: 32px;
+
+	display: flex;
+	justify-content: center;
 }
 
 .subscriptions__main-title {
 	margin-bottom: 24px;
 	color: #fff;
+	font-size: 32px;
+	line-height: 38px;
+	font-weight: 900;
 }
 
 .subscriptions__card-list {
-	position: relative;
 	display: flex;
 	justify-content: center;
+	flex-direction: row;
+	position: relative;
 }
 
 .subscriptions__card-sub {
-	position: relative;
-	display: flex;
-	flex-direction: column;
+	cursor: pointer;
+	position: absolute;
 	width: 502px;
-	max-height: 296px;
-	background: linear-gradient(90deg, black 0%, rgba(13, 0, 123, 0.25) 100%);
-	border: 1px solid rgba(0, 89, 193, 0.5);
+	height: 296px;
 	border-radius: 12px;
 	padding: 32px;
-	gap: 32px;
+	display: flex;
+	flex-direction: column;
 }
 
 .subscriptions__card-sub--active {
+	position: relative;
+	opacity: 1;
+
 	z-index: 100;
-	background: linear-gradient( 0deg, rgba(0, 89, 193, 0.5), rgba(0, 89, 193, 0.5) ),
-	linear-gradient(90deg, rgba(0, 89, 193, 0.5) 0%, rgba(13, 0, 123, 0.5) 100%);
-	border: 1px solid rgba(0, 89, 193, 0.5);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 89, 193, 0.5),
+      rgba(0, 89, 193, 0.5)
+    ),
+    linear-gradient(90deg, rgba(0, 89, 193, 0.5) 0%, rgba(13, 0, 123, 0.5) 100%);
+
+  border: 1px solid rgba(0, 89, 193, 0.5);
 }
 
 .subscriptions__card-sub--left {
-	z-index: 0;
-	left: 8%;
+	position: relative;
+	left: 115px;
 }
 
 .subscriptions__card-sub--left::before {
 	content: "";
-	display: block;
-	width: 100%;
-	height: 100%;
 	position: absolute;
+	width: 100%;
+  height: 100%;
 	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: linear-gradient(-90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(-90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
+  border-radius: 12px;
 }
 
 .subscriptions__card-sub--right {
-	z-index: 0;
-	right: 8%;
+	position: relative;
+	left: -120px;
 }
 
 .subscriptions__card-sub--right::before {
 	content: "";
-	display: block;
-	width: 100%;
-	height: 100%;
 	position: absolute;
+	width: 100%;
+  height: 100%;
 	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(-90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
+  border-radius: 12px;
 }
 
 .subscriptions__card-title {
 	margin: 0;
 	color: #fff;
-	font-size: 30px;
+	font-size: 28px;  /*Если ставить шрифт 30пкс, как в макете, то заголовок уходит вниз. Не знаю, почему так происходит*/
 	line-height: 36px;
 	font-weight: 900;
 	text-align: center;
+	margin-bottom: 35px;
 }
 
 .subscriptions__card-description {
 	color: #fff;
-	padding-left: 25px;
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 500;
+	padding-bottom: 32px;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
+	gap: 16px;
 }
 
 .subscriptions__card-btn {
@@ -477,35 +501,52 @@
 	flex-direction: row;
 	justify-content: end;
 	gap: 10px;
-	margin: 0;
-	padding: 0;
 }
 
 .card-btn {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #fff;
-	text-decoration: none;
-	text-align: center;
-	font-size: 18px;
-	line-height: 22px;
+	gap: 10px;
 	width: 147px;
 	height: 40px;
 	border-radius: 12px;
+	font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .subscriptions__btn-price {
 	display: flex;
-	/* align-items: center; */
 	font-weight: 900;
 	background-color: #e38B00;
 }
 
+.subscriptions__btn-price:hover {
+	background-color: inherit;
+	border: 1px solid #e38B00;
+}
+
+.subscriptions__btn-price:active {
+	background-color: #e3dcd1;
+	border: none;
+	color: #e38B00;
+}
+
 .subscriptions__btn-trial {
 	display: flex;
-	/* align-items: center; */
 	font-weight: 500;
 	background-color: transparent;
+	border: 1px solid #e38B00;
+}
+
+.subscriptions__btn-trial:hover {
+	background-color: #e38B00;
+	border: 1px solid #e3dcd1;
+}
+
+.subscriptions__btn-trial:active {
+	background-color: #e3dcd1;
+	color: #e38B00;
 	border: 1px solid #e38B00;
 }
