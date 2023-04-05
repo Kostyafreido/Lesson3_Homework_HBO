@@ -156,33 +156,13 @@
 	position: relative;
 }
 
-.main-container__slider-box::after {
-	content: "";
-	position: absolute;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-	width: 500px;
-	top: 195px;
-	left: 93px;
-	right: 0;
-}
-
-.main-container__slider-box::before {
-	content: "";
-	position: absolute;
-	background-color: #E3B100;
-	width: 100px;
-	height: 1px;
-	bottom: 82px;
-	left: 93px;
-}
-
 .main-container__main_title {
 	display: flex;
 	justify-content: center;
 	padding: 24px;
 	position: relative;
 	min-width: 658px;
-    min-height: 143px;
+  min-height: 143px;
 }
 
 .info__play {
@@ -190,6 +170,25 @@
 	justify-content: center;
 	margin: 0 auto;
 	padding: 24px;
+	position: relative;
+	left: 17px;
+}
+
+.info__line {
+	min-width: 500px;
+  height: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.5);;
+  margin: 0 auto;
+	position: relative;
+}
+
+.info__line::before {
+	content: "";
+	position: absolute;
+	border-bottom: 1px solid #E3B100;
+	min-width: 100px;
+	top: 0;
+  left: 0;
 }
 
 .info__btn {
@@ -214,13 +213,14 @@
 /*Не знаю, как сделать, так чтобы наведение работало на псевдоэлемент и текст одновременно
 Сейчас, если наводить на псевдо, ховер работает, но текст не подсвечивается. Если наводить на текст, то он подсвечивается вместе с псевдо*/
 
-.info__btn:hover:before {
+/* .info__btn:hover {
 	background-color: #E3B100;
-} 
+	background: transparent;
+}  */
 
 .info__btn:hover:before {
 	background-color: #E3B100;
-} 
+}
 
 .info__btn:active:before {
 	background-color: #dedcd6;
@@ -248,8 +248,15 @@
 
 .series {
 	position: relative;
-	width: max-content;
 	padding-bottom: 81px;
+	width: 1920px;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	
+}
+
+.series::-webkit-scrollbar {
+	display: none;
 }
 
 .series__wrapper {
@@ -269,18 +276,14 @@
 	padding: 0;
 	margin: 0;
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: row;
 	gap: 24px;
-	overflow-x: auto;
-	scroll-snap-type: x mandatory;
-	overflow: hidden;
 }
 
 .series__item {
 	cursor: pointer;
 	position: relative;
-	/* scroll-snap-align: start; */
+	scroll-snap-align: start;
 }
 
 .series__item:hover a {
@@ -427,7 +430,7 @@
 	position: relative;
 	opacity: 1;
 
-	z-index: 100;
+	z-index: 3;
   background: linear-gradient(
       0deg,
       rgba(0, 89, 193, 0.5),
@@ -452,7 +455,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(-90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
+	background: linear-gradient(220deg, #000000 10%, rgba(13, 0, 123, 0.25) 100%);
   border-radius: 12px;
 }
 
@@ -470,7 +473,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(-90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
+	background: linear-gradient(90deg, #000000 15%, rgba(13, 0, 123, 0.25) 100%);
   border-radius: 12px;
 }
 
