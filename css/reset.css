@@ -9,6 +9,10 @@ h1,h2, h3, h4, p {
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, p {
+	color: #fff;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -27,8 +31,8 @@ button {
 	outline: none;
 	cursor: pointer;
 	display: flex;
-	/* text-transform: uppercase; */
 	margin: 0;
 	padding: 0;
 	color: #fff;
+	background-color: #E38B00;
 }
