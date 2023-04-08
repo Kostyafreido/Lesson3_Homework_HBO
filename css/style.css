@@ -11,7 +11,6 @@
 	overflow: hidden;
 }
 
-
 .page__body {
 	background: #000000;
 	width: 1276px;
@@ -22,6 +21,13 @@
 	line-height: 21px;
 	font-weight: 400;
 }
+
+/* .page__body--form {
+	background-image: url(../img/bg_sign_in.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover
+} */
 
 .main-header__logo {
 	display: flex;
@@ -241,7 +247,7 @@
 .series {
 	position: relative;
 	padding-bottom: 81px;
-	width: 1920px;
+	max-width: 1920px;
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 	
@@ -549,6 +555,7 @@
 
 /* FORM STYLES */
 
+
 .container-form {
 	background-image: url(../img/bg_sign_in.png);
 	background-repeat: no-repeat;
@@ -578,7 +585,7 @@
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 28px;
-	margin-bottom: 12px;
+	margin-bottom: 21px;
 }
 
 .cards__container {
@@ -586,7 +593,7 @@
 	justify-content: center;
 	gap: 35px;
 	padding-top: 11px;
-	padding-bottom: 32px;
+	/* padding-bottom: 32px; */
 }
 
 .cards__content {
@@ -679,11 +686,16 @@
 	fill: #e38b00;
 }
 
+/* .form-container {
+	margin-top: 32px;
+} */
+
 .form-container__main-title {
 	text-align: center;
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 29px;
+	margin-top: 32px;
 	margin-bottom: 24px;
 }
 
@@ -726,7 +738,7 @@
 	line-height: 19px;
 }
 
-.order-form__input--active {
+.order-form__input:focus {
 	border-bottom: 2px solid #e38b00;
 }
 
