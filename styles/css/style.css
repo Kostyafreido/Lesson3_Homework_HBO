@@ -112,7 +112,7 @@
 
 .main-container__index-background {
 	position: relative;
-	background-image: url(../img/index-background_png.png);
+	background-image: url(/assets/img/index-background.png);
 	max-width: 1274px;
 	min-height: 595px;
 	margin: 0 auto;
@@ -193,7 +193,7 @@
 .info__btn::before {
 	content: "";
 	position: absolute;
-	background-image: url(../img/triangle_btn-png.png);
+	background-image: url(/assets/img/triangle-btn.png);
 	background-repeat: no-repeat;
 	background-position: 15px 12px;;
 	background-color: rgba(255, 255, 255, 0.1);
@@ -203,14 +203,6 @@
 	top: -3px;
 	left: -40px;
 }
-
-/*Не знаю, как сделать, так чтобы наведение работало на псевдоэлемент и текст одновременно
-Сейчас, если наводить на псевдо, ховер работает, но текст не подсвечивается. Если наводить на текст, то он подсвечивается вместе с псевдо*/
-
-/* .info__btn:hover {
-	background-color: #E3B100;
-	background: transparent;
-}  */
 
 .info__btn:hover:before {
 	background-color: #E3B100;
@@ -388,9 +380,7 @@
 }
 
 .subscriptions {
-	/* width: max-content; */
 	padding-bottom: 32px;
-
 	display: flex;
 	justify-content: center;
 }
@@ -554,7 +544,7 @@
 
 
 .container-form {
-	background-image: url(../img/7886115\ 1.png);
+	background-image: url(/assets/img/bg-sign-in.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover
@@ -810,7 +800,7 @@
 }
 
 .order-form__checkbox-input:checked + .order-form__checkbox-label {
-	background-image: url(../img/form-tick.svg);
+	background-image: url(/assets/img/form-tick.svg);
 	background-repeat: no-repeat;
   background-position: 50%;
 }
