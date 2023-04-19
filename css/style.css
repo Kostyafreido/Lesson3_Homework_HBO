@@ -11,9 +11,9 @@
 	overflow: hidden;
 }
 
-
 .page__body {
 	background: #000000;
+	/* max-width: 1920px; */
 	width: 1276px;
 	margin: 0 auto;
 	min-height: 100%;
@@ -33,6 +33,8 @@
 }
 
 .main-header {
+	max-width: 1276px;
+	margin: 0 auto;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	display: flex;
@@ -239,9 +241,10 @@
 }
 
 .series {
+	margin: 0 auto;
 	position: relative;
 	padding-bottom: 81px;
-	width: 1920px;
+	max-width: 1920px;
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 	
@@ -549,11 +552,19 @@
 
 /* FORM STYLES */
 
+
 .container-form {
-	background-image: url(../img/bg_sign_in.png);
+	background-image: url(../img/7886115\ 1.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover
+}
+
+.container-form__wrapper {
+	padding: 0 8px;
+	max-width: 1290px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .intro-form {
@@ -578,7 +589,7 @@
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 28px;
-	margin-bottom: 12px;
+	margin-bottom: 21px;
 }
 
 .cards__container {
@@ -679,11 +690,22 @@
 	fill: #e38b00;
 }
 
+/* .form-container {
+	padding-top: 32px;
+} */
+
+/* .form-container__wrapper {
+	max-width: 734px;
+	width: 100%;
+	margin: 0 auto;
+} */
+
 .form-container__main-title {
 	text-align: center;
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 29px;
+	/* margin-top: 32px; */
 	margin-bottom: 24px;
 }
 
@@ -726,7 +748,7 @@
 	line-height: 19px;
 }
 
-.order-form__input--active {
+.order-form__input:focus {
 	border-bottom: 2px solid #e38b00;
 }
 

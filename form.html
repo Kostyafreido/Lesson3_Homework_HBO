@@ -8,32 +8,35 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
-    <div class="container-form">
-      <header class="main-header">
-        <a href="index.html" target="_blank" class="main-header__logo">
-            <img src="img/main_logo.svg" width="100" height="41" alt="Логотип сайта">
-        </a>
-        <nav class="main-nav__wrapper">
-          <ul class="main-nav__left-list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">series</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">movies</a>
-            </li>
-          </ul>
-          <ul class="main-nav__right-list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">free episodes</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">schedule</a>
-            </li>
-          </ul>
-        </nav>
-        <a class="button__header" href="#">sign in</a>
-      </header>
-      <section class="intro-form">
+    <header class="main-header">
+      <a href="index.html" target="_blank" class="main-header__logo">
+        <img src="img/main_logo.svg" width="100" height="41" alt="Логотип сайта">
+      </a>
+      <nav class="main-nav__wrapper">
+        <ul class="main-nav__left-list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">series</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">movies</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">shows</a>
+          </li>
+        </ul>
+        <ul class="main-nav__right-list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">free episodes</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">schedule</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="button__header" href="#">sign in</a>
+    </header>
+    <section class="container-form">
+      <div class="container-form__wrapper">
         <h1 class="intro-form__title">sign up</h1>
         <p class="intro-form__text">Choose your HBO Max plan</p>
         <div class="cards__container">
@@ -68,29 +71,31 @@
             </button>
           </div>
         </div>
-      </section>
+      </div>
       <section class="form-container">
-        <h3 class="form-container__main-title">Create an account</h3>
-        <form class="form-container__field-group order-form" method="post" action="#">
-          <fieldset class="order-form__user-name">
-            <input class="order-form__input order-form__input--active" type="text" name="firstname" id="firstname-id" placeholder="Your first name" value="Yana" required>
-            <input class="order-form__input" type="text" name="lastname" id="lastname-id" placeholder="Your last name" required>
-          </fieldset>
-          <fieldset class="order-form__user-mail">
-            <input class="order-form__input order-form__input--mail" type="email" name="email" placeholder="Email" >
-            <input class="order-form__input order-form__input--pass" type="password" name="password" placeholder="Password" >
-          </fieldset>
-          <fieldset class="order-form__user-consent">
-            <label class="order-form__checkbox">
-              <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="1">
-              <span class="order-form__checkbox-label"></span>
-              Use my email address to send marketing promotions and offers from HBO Max (a WarnerMedia company) and Affiliates via email, social media and other channels
-            </label>
-          </fieldset>
-          <button class="order-form__btn">Create</button>
-          <p class="order-form__text-privacy">To withdraw your consent (including any consent you have previously given) and to learn more about your rights and how to exercise them, please read the <a class="order-form__link" href="https://policies.google.com/privacy?hl=en-US" target="_blank">Privacy Policy</a></p>
-        </form>
+        <div class="form-container__wrapper">
+          <h3 class="form-container__main-title">Create an account</h3>
+          <form class="form-container__field-group order-form" method="post" action="#">
+            <fieldset class="order-form__user-name">
+              <input class="order-form__input" type="text" name="firstname" id="firstname-id" placeholder="Your first name" value="Yana" required>
+              <input class="order-form__input" type="text" name="lastname" id="lastname-id" placeholder="Your last name" required>
+            </fieldset>
+            <fieldset class="order-form__user-mail">
+              <input class="order-form__input order-form__input--mail" type="email" name="email" placeholder="Email" >
+              <input class="order-form__input order-form__input--pass" type="password" name="password" placeholder="Password" >
+            </fieldset>
+            <fieldset class="order-form__user-consent">
+              <label class="order-form__checkbox">
+                <input class="order-form__checkbox-input" type="checkbox" name="control-checkbox" value="1">
+                <span class="order-form__checkbox-label"></span>
+                Use my email address to send marketing promotions and offers from HBO Max (a WarnerMedia company) and Affiliates via email, social media and other channels
+              </label>
+            </fieldset>
+            <button class="order-form__btn">Create</button>
+            <p class="order-form__text-privacy">To withdraw your consent (including any consent you have previously given) and to learn more about your rights and how to exercise them, please read the <a class="order-form__link" href="https://policies.google.com/privacy?hl=en-US" target="_blank">Privacy Policy</a></p>
+          </form>
+        </div>
       </section>
-    </div>  
+    </section>  
   </body>
 </html>
