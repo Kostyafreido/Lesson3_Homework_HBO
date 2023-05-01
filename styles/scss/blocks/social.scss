@@ -1,0 +1,29 @@
+@import "../colors.scss";
+
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0;
+}
+
+.social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $buttonBlue;
+  width: 44px;
+  height: 30px;
+  border-radius: 6px;
+
+  &--message {
+    width: 142px;
+    height: 30px;
+  }
+}

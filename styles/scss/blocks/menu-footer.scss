@@ -1,0 +1,43 @@
+.menu-footer__content {
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin-bottom: 21px;
+}
+
+.menu-footer__information {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 0;
+}
+
+.menu-footer__item {
+  
+
+  &--original {
+    background: linear-gradient(180deg, #0059C1 0%, #9E00FF 77.08%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1px solid #9E00FF;
+  }
+}
+
+.menu-footer__item-link {
+  color: #707070;
+
+  &:hover {
+    color: $mainText;
+  }
+}
+
+.main-footer__additional-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 13px;
+}
+
+.main-footer__additional-description {
+  text-align: right;
+}
