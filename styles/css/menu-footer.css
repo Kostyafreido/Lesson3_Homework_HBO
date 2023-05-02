@@ -13,15 +13,15 @@
 }
 
 .menu-footer__item--original {
-  background: linear-gradient(180deg, #0059C1 0%, #9E00FF 77.08%);
+  background: linear-gradient(180deg, #0059C1 0%, #9e00ff 77.08%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border-bottom: 1px solid #9E00FF;
+  border-bottom: 1px solid #9e00ff;
 }
 
 .menu-footer__item-link {
   color: #707070;
 }
 .menu-footer__item-link:hover {
-  color: white;
+  color: #fff;
 }

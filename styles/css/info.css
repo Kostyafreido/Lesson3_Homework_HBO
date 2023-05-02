@@ -40,10 +40,10 @@
   top: -3px;
   left: -40px;
 }
-.info__btn::before:hover {
+.info__btn:hover::before {
   background-color: #E3B100;
 }
-.info__btn::before:active {
+.info__btn:active::before {
   background-color: #dedcd6;
 }
 

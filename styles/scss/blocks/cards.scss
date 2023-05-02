@@ -1,0 +1,97 @@
+@import "../colors.scss";
+
+.cards__container {
+	display: flex;
+	justify-content: center;
+	gap: 35px;
+	padding-top: 11px;
+	padding-bottom: 32px;
+}
+
+.cards__content {
+	position: relative;
+	padding: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 502px;
+  min-height: 250px;
+	background-color: $buttonBlue;
+	background: linear-gradient( 90deg, rgba(0, 89, 193, 0.5) 0%, rgba(13, 0, 123, 0.5) 100% );
+	border: 1px solid rgba(0, 89, 193, 0.5);
+	border-radius: 12px;
+}
+
+.cards__text-area {
+	color: $mainText;
+	display: flex;
+	flex-direction: column;
+}
+
+.cards__text-main {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.cards__text-title {
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 36px;
+}
+
+.cards__text-price {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 29px;
+}
+
+.cards__text-descriptions {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.cards__btn-area {
+	display: flex;
+	justify-content: end
+}
+
+.cards__btn-choose {
+	width: 93px;
+	height: 40px;
+	border-radius: 12px;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 22px;
+
+  &:hover {
+    background-color: inherit;
+    border: 1px solid $buttonOrange;
+  }
+  &:active {
+    background-color: #e3dcd1;
+    border: none;
+    color: $buttonOrange;
+  }
+}
+
+.cards__btn-close {
+	position: absolute;
+	top: -5%;
+	right: -2%;
+	background: transparent;
+	
+}
+
+.cards__btn-close svg {
+	fill: $buttonOrange;
+
+  &:hover {
+    fill: white;
+  }
+  &:active {
+    fill: #e3dcd1;
+  }
+}

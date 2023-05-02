@@ -15,6 +15,9 @@
 }
 
 .main-footer__contacts-description {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
   margin-bottom: 17px;
 }
 
@@ -48,4 +51,18 @@
 .main-footer__copyright-text {
   text-align: center;
   color: #707070;
+}
+
+.main-footer__additional-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 13px;
+}
+
+.main-footer__additional-description {
+  text-align: right;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
 }
