@@ -1,41 +1,29 @@
-.series {
+.cartoons {
   margin: 0 auto;
   position: relative;
-  padding-bottom: 81px;
+  padding-bottom: 50px;
   max-width: 1920px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
 }
-.series--tvshows {
-  padding-top: 20px;
+.cartoons--films {
   padding-bottom: 50px;
-  position: relative;
 }
 
-.series::-webkit-scrollbar {
+.cartoons__arrow-btn {
+  background-color: transparent;
+}
+
+.cartoons::-webkit-scrollbar {
   display: none;
 }
 
-.series__arrow-btn {
-  background-color: transparent;
-}
-.series__arrow-btn::after {
-  content: "";
-  position: absolute;
-  background-image: url(/assets/img/shows_movies_cartoons/arrow-img.png);
-  background-repeat: no-repeat;
-  width: 17px;
-  height: 31px;
-  right: -30px;
-  top: 205px;
-}
-
-.series__wrapper {
+.cartoons__wrapper {
   display: flex;
   flex-direction: row;
 }
 
-.series__main-title {
+.cartoons__main-title {
   color: #fff;
   font-size: 32px;
   font-weight: 900;
@@ -43,32 +31,31 @@
   margin-bottom: 24px;
 }
 
-.series__list {
+.cartoons__list {
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: row;
   gap: 24px;
-  position: relative;
 }
 
-.series__item {
+.cartoons__item {
   cursor: pointer;
   position: relative;
   scroll-snap-align: start;
 }
-.series__item:hover a {
+.cartoons__item:hover a {
   background: rgba(255, 255, 255, 0.15);
   filter: blur(5px);
   transition: all 0.3s ease-out;
   z-index: 0;
 }
 
-.series__item-link {
+.cartoons__item-link {
   position: relative;
 }
 
-.series__item-img {
+.cartoons__item-img {
   position: relative;
   z-index: 1;
   border-radius: 12px;
@@ -77,7 +64,7 @@
   height: 300px;
 }
 
-.series__card-area {
+.cartoons__card-area {
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -87,7 +74,7 @@
   z-index: 0;
 }
 
-.series__info-header {
+.cartoons__info-header {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -96,7 +83,7 @@
   margin-bottom: 55px;
 }
 
-.series__raiting {
+.cartoons__raiting {
   color: #E3B100;
   font-size: 12px;
   line-height: 14px;
@@ -106,20 +93,20 @@
   gap: 7px;
 }
 
-.series__text {
+.cartoons__text {
   color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
   line-height: 14px;
   font-weight: 500;
 }
 
-.series__info-area {
+.cartoons__info-area {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.series__info-title {
+.cartoons__info-title {
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
   line-height: 17px;
@@ -127,21 +114,21 @@
   margin-bottom: 7px;
 }
 
-.series__info-main-title {
+.cartoons__info-main-title {
   font-size: 18px;
   line-height: 22px;
   font-weight: 900;
   margin-bottom: 6px;
 }
 
-.series__info-description {
+.cartoons__info-description {
   font-size: 11px;
   line-height: 13px;
   font-weight: 400;
   margin-bottom: 50px;
 }
 
-.series__card-button {
+.cartoons__card-button {
   justify-content: space-between;
   width: 170px;
   height: 38px;
@@ -154,9 +141,9 @@
   font-weight: 700;
   padding: 12px 16px;
 }
-.series__card-button:hover {
+.cartoons__card-button:hover {
   background: #E3B100;
 }
-.series__card-button:active {
+.cartoons__card-button:active {
   background: #ece0b7;
 }

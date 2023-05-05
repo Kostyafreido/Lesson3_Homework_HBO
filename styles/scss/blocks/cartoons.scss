@@ -1,9 +1,9 @@
 @import "../colors.scss";
 
-.movies {
+.cartoons {
 	margin: 0 auto;
 	position: relative;
-	padding-bottom: 81px;
+	padding-bottom: 50px;
 	max-width: 1920px;
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
@@ -13,20 +13,20 @@
   }
 }
 
-.movies__arrow-btn {
+.cartoons__arrow-btn {
 	background-color: transparent;
 }
 
-.movies::-webkit-scrollbar {
+.cartoons::-webkit-scrollbar {
 	display: none;
 }
 
-.movies__wrapper {
+.cartoons__wrapper {
 	display: flex;
 	flex-direction: row;
 }
 
-.movies__main-title {
+.cartoons__main-title {
 	color: $mainText;
 	font-size: 32px;
 	font-weight: 900;
@@ -34,7 +34,7 @@
 	margin-bottom: 24px;
 }
 
-.movies__list {
+.cartoons__list {
 	padding: 0;
 	margin: 0;
 	display: flex;
@@ -42,7 +42,7 @@
 	gap: 24px;
 }
 
-.movies__item {
+.cartoons__item {
 	cursor: pointer;
 	position: relative;
 	scroll-snap-align: start;
@@ -55,11 +55,11 @@
   }
 }
 
-.movies__item-link {
+.cartoons__item-link {
 	position: relative;
 }
 
-.movies__item-img {
+.cartoons__item-img {
 	position: relative;
 	z-index: 1;
 	border-radius: 12px;
@@ -68,7 +68,7 @@
 	height: 300px;
 }
 
-.movies__card-area {
+.cartoons__card-area {
 	color: $mainText;
 	display: flex;
 	flex-direction: column;
@@ -78,7 +78,7 @@
 	z-index: 0;
 }
 
-.movies__info-header {
+.cartoons__info-header {
 	display: flex;
 	justify-content: space-between;
 	list-style-type: none;
@@ -87,7 +87,7 @@
 	margin-bottom: 55px;
 }
 
-.movies__raiting {
+.cartoons__raiting {
 	color: #E3B100;
 	font-size: 12px;
 	line-height: 14px;
@@ -97,20 +97,20 @@
 	gap: 7px;
 }
 
-.movies__text {
+.cartoons__text {
 	color: rgba(255, 255, 255, 0.5);
 	font-size: 12px;
 	line-height: 14px;
 	font-weight: 500;
 }
 
-.movies__info-area {
+.cartoons__info-area {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-.movies__info-title {
+.cartoons__info-title {
 	color: rgba(255, 255, 255, 0.5);
 	font-size: 14px;
 	line-height: 17px;
@@ -118,21 +118,21 @@
 	margin-bottom: 7px;
 }
 
-.movies__info-main-title {
+.cartoons__info-main-title {
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: 900;
 	margin-bottom: 6px;
 }
 
-.movies__info-description {
+.cartoons__info-description {
 	font-size: 11px;
 	line-height: 13px;
 	font-weight: 400;
 	margin-bottom: 50px;
 }
 
-.movies__card-button {
+.cartoons__card-button {
 	justify-content: space-between;
 	width: 170px;
 	height: 38px;

@@ -48,7 +48,13 @@
         <h1 class="visually-hidden">HBO</h1>
         <section class="series series--tvshows">
           <h2 class="series__main-title">TV Shows</h2>
-          <img class="arrow" src="/assets/img/shows_movies_cartoons/arrow.svg" alt="Кнопка прокрутки вправо">
+          <!-- <img class="arrow" src="/assets/img/shows_movies_cartoons/arrow.svg" alt="Кнопка прокрутки вправо"> -->
+          <button class="series__arrow-btn">
+            <span class="visually-hidden">Прокрутка вправо</span>
+            <!-- <svg width="18" height="33" viewBox="0 0 18 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.7893 32.1563C1.55752 32.1562 1.33095 32.0874 1.13826 31.9586C0.945566 31.8298 0.795404 31.6467 0.70676 31.4326C0.618117 31.2184 0.594975 30.9827 0.640261 30.7554C0.685547 30.5281 0.797226 30.3193 0.961176 30.1555L14.5776 16.5391L0.961176 2.92267C0.747709 2.70165 0.629591 2.40563 0.632261 2.09837C0.634931 1.79111 0.758176 1.49719 0.975451 1.27991C1.19273 1.06264 1.48665 0.93939 1.79391 0.93672C2.10117 0.93405 2.39719 1.05217 2.61821 1.26564L17.0635 15.7109C17.2832 15.9307 17.4066 16.2287 17.4066 16.5395C17.4066 16.8502 17.2832 17.1482 17.0635 17.368L2.61821 31.8133C2.50934 31.9221 2.3801 32.0084 2.23787 32.0672C2.09564 32.1261 1.94322 32.1563 1.7893 32.1563Z" fill="white" fill-opacity="0.5"/>
+            </svg> -->
+          </button>
           <div class="series__wrapper series__wrapper--tvshows">
             <ul class="series__list series__list--tvshows">
               <li class="series__item">
@@ -193,7 +199,12 @@
 
       <section class="movies movies--films">
         <h2 class="movies__main-title">Movies</h2>
-        <img class="arrow" src="../assets/img/arrow.png" alt="Кнопка вправо">
+        <button class="movies__arrow-btn">
+          <svg width="18" height="33" viewBox="0 0 18 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.7893 32.1563C1.55752 32.1562 1.33095 32.0874 1.13826 31.9586C0.945566 31.8298 0.795404 31.6467 0.70676 31.4326C0.618117 31.2184 0.594975 30.9827 0.640261 30.7554C0.685547 30.5281 0.797226 30.3193 0.961176 30.1555L14.5776 16.5391L0.961176 2.92267C0.747709 2.70165 0.629591 2.40563 0.632261 2.09837C0.634931 1.79111 0.758176 1.49719 0.975451 1.27991C1.19273 1.06264 1.48665 0.93939 1.79391 0.93672C2.10117 0.93405 2.39719 1.05217 2.61821 1.26564L17.0635 15.7109C17.2832 15.9307 17.4066 16.2287 17.4066 16.5395C17.4066 16.8502 17.2832 17.1482 17.0635 17.368L2.61821 31.8133C2.50934 31.9221 2.3801 32.0084 2.23787 32.0672C2.09564 32.1261 1.94322 32.1563 1.7893 32.1563Z" fill="white" fill-opacity="0.5"/>
+          </svg>
+        </button>
+        <!-- <img class="arrow" src="../assets/img/arrow.png" alt="Кнопка вправо"> -->
         <div class="movies__wrapper">
           <ul class="movies__list">
             <li class="movies__item">
@@ -335,216 +346,152 @@
         </div>
       </section>
 
-
-      <div class="cartoons-sec">
-        <div class="container">
-          <section class="film_list-title ">
-            <h2>Cartoons</h2>
-          </section>
-          <img class="arrow" src="../assets/img/arrow.png" alt="Кнопка вправо">
-          <section class="film_list ">
-            <img class="arrow" src="../assets/img/arrow.png" alt="arrow">
-            <div class="film_card">
-              <div class="card"><img src="../assets/img/lonney.png" alt="film">
-                <div class="card_info">
-                  <div class="card_info-header">
-                    <div class="rating"><img src="../assets/img/star.png" alt="star">
-                      <p>8.1</p>
-                    </div>
-                    <div class="year">
-                      <p>2022</p>
-                    </div>
-                  </div>
-                  <div class="card_info-main">
-                    <h2>Season 1</h2>
-                    <h1>House of the Dragon</h1>
-                    <p>An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.</p>
-                  </div>
-                  <div class="card_info-footer">
-                    <a class="btn-watch"><img src="../assets/img/play.png">
-                      <p>WATCH</p>
-                    </a>
-                  </div>
-                </div>
+      <div class="cartoons">
+        <h2 class="cartoons__main-title">Cartoons</h2>
+        <button class="cartoons__arrow-btn">
+          <svg width="18" height="33" viewBox="0 0 18 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.7893 32.1563C1.55752 32.1562 1.33095 32.0874 1.13826 31.9586C0.945566 31.8298 0.795404 31.6467 0.70676 31.4326C0.618117 31.2184 0.594975 30.9827 0.640261 30.7554C0.685547 30.5281 0.797226 30.3193 0.961176 30.1555L14.5776 16.5391L0.961176 2.92267C0.747709 2.70165 0.629591 2.40563 0.632261 2.09837C0.634931 1.79111 0.758176 1.49719 0.975451 1.27991C1.19273 1.06264 1.48665 0.93939 1.79391 0.93672C2.10117 0.93405 2.39719 1.05217 2.61821 1.26564L17.0635 15.7109C17.2832 15.9307 17.4066 16.2287 17.4066 16.5395C17.4066 16.8502 17.2832 17.1482 17.0635 17.368L2.61821 31.8133C2.50934 31.9221 2.3801 32.0084 2.23787 32.0672C2.09564 32.1261 1.94322 32.1563 1.7893 32.1563Z" fill="white" fill-opacity="0.5"/>
+          </svg>
+        </button>
+        <!-- <img class="arrow" src="../assets/img/arrow.png" alt="Кнопка вправо"> -->
+        <div class="cartoons__wrapper">
+          <ul class="cartoons__list">
+            <li class="cartoons__item">
+              <a class="cartoons__item-link" href="#">
+                <img class="cartoons__item-img" src="./assets/img/shows_movies_cartoons/looney tunes cartoons.jpg" alt="">
+              </a>
+              <div class="cartoons__card-area">
+                <ul class="cartoons__info-header">
+                  <li class="cartoons__raiting" >
+                      <img src="./assets/img/serials-list--cards/icon-star-raiting.png" alt="star">
+                      8.1
+                  </li>
+                  <li class="cartoons__text">2022</li>
+                </ul>
+                <ul class="cartoons__info-area">
+                  <li class="cartoons__info-title">Season 1</li>
+                  <li class="cartoons__info-main-title">House of the Dragon</li>
+                  <li class="cartoons__info-description">An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.</li>
+                </ul>
+                <button class="cartoons__card-button"><img src="./assets/img/triangle-btn.png" alt="">
+                  <span>watch</span>
+                </button>
               </div>
-              <div class="card"><img src="../assets/img/AdventureTime.png" alt="film">
-                <div class="card_info">
-                  <div class="card_info-header">
-                    <div class="rating"><img src="../assets/img/star.png" alt="star">
-                      <p>8.1</p>
-                    </div>
-                    <div class="year">
-                      <p>2022</p>
-                    </div>
-                  </div>
-                  <div class="card_info-main">
-                    <h2>Season 1</h2>
-                    <h1>House of the Dragon</h1>
-                    <p>An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.</p>
-                  </div>
-                  <div class="card_info-footer">
-                    <a class="btn-watch"><img src="../assets/img/play.png">
-                      <p>WATCH</p>
-                    </a>
-                  </div>
-                </div>
+            </li>
+            <li class="cartoons__item">
+              <a class="cartoons__item-link" href="#">
+                <img class="cartoons__item-img" src="./assets/img/shows_movies_cartoons/advanture time.jpg" alt="">
+              </a>
+              <div class="cartoons__card-area">
+                <ul class="cartoons__info-header">
+                  <li class="cartoons__raiting">
+                    <img src="./assets/img/serials-list--cards/icon-star-raiting.png" alt="star">
+                    0.1
+                  </li>
+                  <li class="cartoons__text">2022</li>
+                </ul>
+                <ul class="cartoons__info-area">
+                  <li class="cartoons__info-title">Season 1</li>
+                  <li class="cartoons__info-main-title">House of the Dragon</li>
+                  <li class="cartoons__info-description">An internal succession war within House Targaryen at the height of its power, 172years before the birth of Daenerys Targaryen.</li>
+                </ul>
+                <button class="cartoons__card-button"><img src="./assets/img/triangle-btn.png" alt="">
+                  <span>watch</span>
+                </button>
               </div>
-              <div class="card"><img src="../assets/img/Tom&Jerry.png" alt="film">
-                <div class="card_info">
-                  <div class="card_info-header">
-                      <div class="rating"><img src="../assets/img/star.png" alt="star">
-                          <p>8.1</p>
-                      </div>
-                      <div class="year">
-                          <p>2022</p>
-                      </div>
-                  </div>
-                  <div class="card_info-main">
-                    <h2>Season 1</h2>
-                    <h1>House of the Dragon</h1>
-                    <p>An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.</p>
-                  </div>
-                  <div class="card_info-footer">
-                    <a class="btn-watch"><img src="../assets/img/play.png">
-                      <p>WATCH</p>
-                    </a>
-                  </div>
-                </div>
+            </li>
+            <li class="cartoons__item">
+              <a class="cartoons__item-link" href="#">
+                <img class="cartoons__item-img" src="./assets/img/shows_movies_cartoons/tom and jerry in new york.jpg" alt="">
+              </a>
+              <div class="cartoons__card-area">
+                <ul class="cartoons__info-header">
+                    <li class="cartoons__raiting">
+                        <img src="./assets/img/serials-list--cards/icon-star-raiting.png" alt="star">
+                        8.1
+                    </li>
+                    <li class="cartoons__text">2022</li>
+                </ul>
+                <ul class="cartoons__info-area">
+                    <li class="cartoons__info-title">Season 1</li>
+                    <li class="cartoons__info-main-title">House of the Dragon</li>
+                    <li class="cartoons__info-description">An internal succession war within House Targaryen at the height of its power, 172
+                    years before the birth of Daenerys Targaryen.</li>
+                </ul>
+                <button class="cartoons__card-button"><img src="./assets/img/triangle-btn.png" alt="">
+                    <span>watch</span>
+                </button>
               </div>
-              <div class="card"><img src="../assets/img/lonney.png" alt="film">
-                <div class="card_info">
-                  <div class="card_info-header">
-                    <div class="rating"><img src="../assets/img/star.png" alt="star">
-                      <p>8.1</p>
-                    </div>
-                    <div class="year">
-                      <p>2022</p>
-                    </div>
-                  </div>
-                  <div class="card_info-main">
-                    <h2>Season 1</h2>
-                    <h1>House of the Dragon</h1>
-                    <p>An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.</p>
-                  </div>
-                  <div class="card_info-footer">
-                    <a class="btn-watch"><img src="../assets/img/play.png">
-                      <p>WATCH</p>
-                    </a>
-                  </div>
-                </div>
+            </li>
+            <li class="cartoons__item">
+              <a class="cartoons__item-link" href="#">
+                <img class="cartoons__item-img" src="./assets/img/shows_movies_cartoons/looney tunes cartoons.jpg" alt="">
+              </a>
+              <div class="cartoons__card-area">
+                <ul class="cartoons__info-header">
+                  <li class="cartoons__raiting">
+                    <img src="./assets/img/serials-list--cards/icon-star-raiting.png" alt="star">
+                    8.1
+                  </li>
+                  <li class="cartoons__text">2022</li>
+                </ul>
+                <ul class="cartoons__info-area">
+                  <li class="cartoons__info-title">Season 1</li>
+                  <li class="cartoons__info-main-title">House of the Dragon</li>
+                  <li class="cartoons__info-description">An internal succession war within House Targaryen at the height of its power, 172
+                  years before the birth of Daenerys Targaryen.</li>
+                </ul>
+                <button class="cartoons__card-button"><img src="./assets/img/triangle-btn.png" alt="">
+                  <span>watch</span>
+                </button>
               </div>
-              <div class="card"><img src="../assets/img/AdventureTime.png" alt="film">
-                <div class="card_info">
-                  <div class="card_info-header">
-                    <div class="rating"><img src="../assets/img/star.png" alt="star">
-                      <p>8.1</p>
-                    </div>
-                    <div class="year">
-                      <p>2022</p>
-                    </div>
-                  </div>
-                  <div class="card_info-main">
-                    <h2>Season 1</h2>
-                    <h1>House of the Dragon</h1>
-                    <p>An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.</p>
-                  </div>
-                  <div class="card_info-footer">
-                    <a class="btn-watch"><img src="../assets/img/play.png">
-                      <p>WATCH</p>
-                    </a>
-                  </div>
-                </div>
+            </li>
+            <li class="cartoons__item">
+              <a class="cartoons__item-link" href="#">
+                <img class="cartoons__item-img" src="./assets/img/shows_movies_cartoons/advanture time.jpg" alt="">
+              </a>
+              <div class="cartoons__card-area">
+                <ul class="cartoons__info-header">
+                  <li class="cartoons__raiting">
+                    <img src="./assets/img/serials-list--cards/icon-star-raiting.png" alt="star">
+                    8.1
+                  </li>
+                  <li class="cartoons__text">2022</li>
+                </ul>
+                <ul class="cartoons__info-area">
+                  <li class="cartoons__info-title">Season 1</li>
+                  <li class="cartoons__info-main-title">House of the Dragon</li>
+                  <li class="cartoons__info-description">An internal succession war within House Targaryen at the height of its power, 172
+                  years before the birth of Daenerys Targaryen.</li>
+                </ul>
+                <button class="cartoons__card-button"><img src="./assets/img/triangle-btn.png" alt="">
+                  <span>watch</span>
+                </button>
               </div>
-              <div class="card"><img src="../assets/img/Tom&Jerry.png" alt="film">
-                <div class="card_info">
-                  <div class="card_info-header">
-                    <div class="rating"><img src="../assets/img/star.png" alt="star">
-                      <p>8.1</p>
-                    </div>
-                    <div class="year">
-                      <p>2022</p>
-                    </div>
-                  </div>
-                  <div class="card_info-main">
-                    <h2>Season 1</h2>
-                    <h1>House of the Dragon</h1>
-                    <p>An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.</p>
-                  </div>
-                  <div class="card_info-footer">
-                    <a class="btn-watch"><img src="../assets/img/play.png">
-                      <p>WATCH</p>
-                    </a>
-                  </div>
-                </div>
+            </li>
+            <li class="cartoons__item">
+              <a class="cartoons__item-link" href="#">
+                <img class="cartoons__item-img" src="./assets/img/shows_movies_cartoons/tom and jerry in new york.jpg" alt="">
+              </a>
+              <div class="cartoons__card-area">
+                <ul class="cartoons__info-header">
+                  <li class="cartoons__raiting">
+                    <img src="./assets/img/serials-list--cards/icon-star-raiting.png" alt="star">
+                    8.1
+                  </li>
+                  <li class="cartoons__text">2022</li>
+                </ul>
+                <ul class="cartoons__info-area">
+                  <li class="cartoons__info-title">Season 1</li>
+                  <li class="cartoons__info-main-title">House of the Dragon</li>
+                  <li class="cartoons__info-description">An internal succession war within House Targaryen at the height of its power, 172years before the birth of Daenerys Targaryen.</li>
+                </ul>
+                <button class="cartoons__card-button"><img src="./assets/img/triangle-btn.png" alt="">
+                  <span>watch</span>
+                </button>
               </div>
-              <div class="card"><img src="../assets/img/lonney.png" alt="film">
-                <div class="card_info">
-                  <div class="card_info-header">
-                    <div class="rating"><img src="../assets/img/star.png" alt="star">
-                        <p>8.1</p>
-                    </div>
-                    <div class="year">
-                        <p>2022</p>
-                    </div>
-                  </div>
-                  <div class="card_info-main">
-                    <h2>Season 1</h2>
-                    <h1>House of the Dragon</h1>
-                    <p>An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.</p>
-                  </div>
-                  <div class="card_info-footer">
-                    <a class="btn-watch"><img src="../assets/img/play.png">
-                      <p>WATCH</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card"><img src="../assets/img/AdventureTime.png" alt="film">
-                <div class="card_info">
-                  <div class="card_info-header">
-                    <div class="rating"><img src="../assets/img/star.png" alt="star">
-                      <p>8.1</p>
-                    </div>
-                    <div class="year">
-                      <p>2022</p>
-                    </div>
-                  </div>
-                  <div class="card_info-main">
-                    <h2>Season 1</h2>
-                    <h1>House of the Dragon</h1>
-                    <p>An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.</p>
-                  </div>
-                  <div class="card_info-footer">
-                    <a class="btn-watch"><img src="../assets/img/play.png">
-                      `<p>WATCH</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card"><img src="../assets/img/Tom&Jerry.png" alt="film">
-                <div class="card_info">
-                  <div class="card_info-header">
-                    <div class="rating"><img src="../assets/img/star.png" alt="star">
-                      <p>8.1</p>
-                    </div>
-                    <div class="year">
-                      <p>2022</p>
-                    </div>
-                  </div>
-                  <div class="card_info-main">
-                    <h2>Season 1</h2>
-                    <h1>House of the Dragon</h1>
-                    <p>An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.</p>
-                  </div>
-                  <div class="card_info-footer">
-                    <a class="btn-watch"><img src="../assets/img/play.png">
-                      <p>WATCH</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+            </li>
+          </ul>
         </div>
       </div>
     </main>

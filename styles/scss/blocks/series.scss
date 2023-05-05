@@ -13,18 +13,33 @@
 		padding-bottom: 50px;
 		position: relative;
 		
-		.arrow {
-			position: absolute;
-			content: "";
-			top: 50%;
-			right: -40px;
-			cursor: pointer;
-			}
+		// .arrow {
+		// 	position: absolute;
+		// 	content: "";
+		// 	top: 50%;
+		// 	right: -40px;
+		// 	cursor: pointer;
+		// }
 	}
 }
 
 .series::-webkit-scrollbar {
 	display: none;
+}
+
+.series__arrow-btn {
+	background-color: transparent;
+
+	&::after {		// выходя за пределы, стрелка теряет цвет. Не пойму, почему
+		content: "";
+		position: absolute;
+		background-image: url(/assets/img/shows_movies_cartoons/arrow-img.png);
+		background-repeat: no-repeat;
+		width: 17px;
+		height: 31px;
+		right: -30px;
+    top: 205px;
+	}
 }
 
 .series__wrapper {
@@ -56,7 +71,7 @@
 	// 	width: 17px;
 	// 	height: 31px;
 	// 	top: 0;
-	// 	right: 0;
+	// 	right: 75px;
 	// }
 }
 
