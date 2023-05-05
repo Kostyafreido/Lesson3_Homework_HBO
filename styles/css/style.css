@@ -48,7 +48,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 }
 
@@ -680,22 +680,11 @@
 	fill: #e38b00;
 }
 
-/* .form-container {
-	padding-top: 32px;
-} */
-
-/* .form-container__wrapper {
-	max-width: 734px;
-	width: 100%;
-	margin: 0 auto;
-} */
-
 .form-container__main-title {
 	text-align: center;
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 29px;
-	/* margin-top: 32px; */
 	margin-bottom: 24px;
 }
 

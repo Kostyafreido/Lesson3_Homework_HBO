@@ -1,0 +1,48 @@
+.main-container__index-background {
+	position: relative;
+	background-image: url(/assets/img/index-background.png);
+	max-width: 1274px;
+	min-height: 595px;
+	margin: 0 auto;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	text-align: center;
+	z-index: 1;
+	padding-bottom: 32px;
+}
+
+.main-container__index-background::before {
+	content: "";
+	position: absolute;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.19%, #000000 100%);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.main-container__slider-area {
+	display: flex;
+	justify-content: center;
+}
+
+.main-container__slider-box {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.main-container__main_title {
+	display: flex;
+	justify-content: center;
+	padding: 24px;
+	position: relative;
+	min-width: 658px;
+  min-height: 143px;
+}

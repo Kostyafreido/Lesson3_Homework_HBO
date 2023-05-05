@@ -1,0 +1,149 @@
+.cartoons {
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 50px;
+  max-width: 1920px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.cartoons--films {
+  padding-bottom: 50px;
+}
+
+.cartoons__arrow-btn {
+  background-color: transparent;
+}
+
+.cartoons::-webkit-scrollbar {
+  display: none;
+}
+
+.cartoons__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.cartoons__main-title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 38px;
+  margin-bottom: 24px;
+}
+
+.cartoons__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.cartoons__item {
+  cursor: pointer;
+  position: relative;
+  scroll-snap-align: start;
+}
+.cartoons__item:hover a {
+  background: rgba(255, 255, 255, 0.15);
+  filter: blur(5px);
+  transition: all 0.3s ease-out;
+  z-index: 0;
+}
+
+.cartoons__item-link {
+  position: relative;
+}
+
+.cartoons__item-img {
+  position: relative;
+  z-index: 1;
+  border-radius: 12px;
+  background: #d9d9d9;
+  width: 210px;
+  height: 300px;
+}
+
+.cartoons__card-area {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px 15px;
+  position: absolute;
+  top: 15px;
+  z-index: 0;
+}
+
+.cartoons__info-header {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+.cartoons__raiting {
+  color: #E3B100;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.cartoons__text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+.cartoons__info-area {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cartoons__info-title {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.cartoons__info-main-title {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.cartoons__info-description {
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.cartoons__card-button {
+  justify-content: space-between;
+  width: 170px;
+  height: 38px;
+  background: #0059c1;
+  border-radius: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 700;
+  padding: 12px 16px;
+}
+.cartoons__card-button:hover {
+  background: #E3B100;
+}
+.cartoons__card-button:active {
+  background: #ece0b7;
+}

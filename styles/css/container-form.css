@@ -1,0 +1,14 @@
+.container-form {
+  background-image: url(/assets/img/bg-sign-in.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 25px;
+}
+
+.container-form__wrapper {
+  padding: 0 8px;
+  max-width: 1290px;
+  width: 100%;
+  margin: 0 auto;
+}

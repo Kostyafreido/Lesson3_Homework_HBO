@@ -1,0 +1,188 @@
+@import "../colors.scss";
+
+.series {
+	margin: 0 auto;
+	position: relative;
+	padding-bottom: 81px;
+	max-width: 1920px;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+
+	&--tvshows {
+		padding-top: 20px;
+		padding-bottom: 50px;
+		position: relative;
+		
+		// .arrow {
+		// 	position: absolute;
+		// 	content: "";
+		// 	top: 50%;
+		// 	right: -40px;
+		// 	cursor: pointer;
+		// }
+	}
+}
+
+.series::-webkit-scrollbar {
+	display: none;
+}
+
+.series__arrow-btn {
+	background-color: transparent;
+
+	&::after {		// выходя за пределы, стрелка теряет цвет. Не пойму, почему
+		content: "";
+		position: absolute;
+		background-image: url(/assets/img/shows_movies_cartoons/arrow-img.png);
+		background-repeat: no-repeat;
+		width: 17px;
+		height: 31px;
+		right: -30px;
+    top: 205px;
+	}
+}
+
+.series__wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.series__main-title {
+	color: $mainText;
+	font-size: 32px;
+	font-weight: 900;
+	line-height: 38px;
+	margin-bottom: 24px;
+}
+
+.series__list {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	position: relative;
+
+	// &--tvshows::after {
+	// 	content: "";
+	// 	position: absolute;
+	// 	background-image: url(/assets/img/shows_movies_cartoons/arrow.svg);
+	// 	background-repeat: no-repeat;
+	// 	width: 17px;
+	// 	height: 31px;
+	// 	top: 0;
+	// 	right: 75px;
+	// }
+}
+
+.series__item {
+	cursor: pointer;
+	position: relative;
+	scroll-snap-align: start;
+
+  &:hover a {
+    background: rgba(255, 255, 255, 0.15);
+    filter: blur(5px);
+    transition: all 0.3s ease-out;
+    z-index: 0;
+  }
+}
+
+.series__item-link {
+	position: relative;
+}
+
+.series__item-img {
+	position: relative;
+	z-index: 1;
+	border-radius: 12px;
+	background: #d9d9d9;
+	width: 210px;
+	height: 300px;
+}
+
+.series__card-area {
+	color: $mainText;
+	display: flex;
+	flex-direction: column;
+	padding: 0 15px 15px;
+	position: absolute;
+	top: 15px;
+	z-index: 0;
+}
+
+.series__info-header {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 55px;
+}
+
+.series__raiting {
+	color: #E3B100;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	gap: 7px;
+}
+
+.series__text {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 500;
+}
+
+.series__info-area {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.series__info-title {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 500;
+	margin-bottom: 7px;
+}
+
+.series__info-main-title {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 900;
+	margin-bottom: 6px;
+}
+
+.series__info-description {
+	font-size: 11px;
+	line-height: 13px;
+	font-weight: 400;
+	margin-bottom: 50px;
+}
+
+.series__card-button {
+	justify-content: space-between;
+	width: 170px;
+	height: 38px;
+	background: $buttonBlue;
+	border-radius: 12px;
+	text-transform: uppercase;
+	color: $mainText;
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: 700;
+	padding: 12px 16px;
+
+  &:hover {
+    background: #E3B100
+  }
+
+  &:active {
+    background: #ece0b7
+  }
+}

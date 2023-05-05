@@ -1,0 +1,18 @@
+.main-nav__wrapper {
+	width: 470px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-nav__left-list {
+	display: inherit;
+	gap: 45px;
+}
+
+.main-nav__right-list {
+	display: inherit;
+	gap: 45px;
+}
