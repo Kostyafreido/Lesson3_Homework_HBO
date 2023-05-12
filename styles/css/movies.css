@@ -1,26 +1,40 @@
 .movies {
   margin: 0 auto;
   position: relative;
-  padding-bottom: 81px;
-  max-width: 1920px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-.movies--films {
   padding-bottom: 50px;
+  max-width: 1920px;
 }
-
-.movies__arrow-btn {
-  background-color: transparent;
+.movies .movies__arrow-btn {
+  fill: white;
+  fill-opacity: 0.5;
+  background: transparent;
+  width: 18;
+  height: 33;
+}
+.movies .movies__arrow-btn:hover {
+  fill: #E3B100;
+  fill-opacity: 1;
+}
+.movies .movies__arrow-btn:active {
+  fill: #ece0b7;
 }
 
 .movies::-webkit-scrollbar {
   display: none;
 }
 
+.movies__container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 17px;
+}
+
 .movies__wrapper {
   display: flex;
   flex-direction: row;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
 }
 
 .movies__main-title {
