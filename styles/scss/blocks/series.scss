@@ -25,10 +25,6 @@
 	}
 }
 
-.series::-webkit-scrollbar {
-	display: none;
-}
-
 .series__container {
 	display: flex;
 	width: 100%;
@@ -41,6 +37,10 @@
 	flex-direction: row;
 	scroll-snap-type: x mandatory;
 	overflow-x: auto;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 .series__main-title {

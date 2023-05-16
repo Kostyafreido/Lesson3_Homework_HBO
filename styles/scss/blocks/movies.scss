@@ -24,10 +24,6 @@
 	}
 }
 
-.movies::-webkit-scrollbar {
-	display: none;
-}
-
 .movies__container {
 	display: flex;
 	width: 100%;
@@ -40,6 +36,10 @@
 	flex-direction: row;
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 .movies__main-title {
