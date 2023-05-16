@@ -10,9 +10,10 @@ body {
   color: $mainText;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
+// ::-webkit-scrollbar {
+//   display: none;
+//   overflow-x: hidden;
+// }
 
 h1,h2, h3, h4, p {
   margin: 0;
